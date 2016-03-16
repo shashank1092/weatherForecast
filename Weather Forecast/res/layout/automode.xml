@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/bkgrndmain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/automode_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Weather forecast for current city :"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/yourLocation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your location :"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="10dp" 
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_Sublocality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall" 
+                android:layout_marginLeft="120dp"/>
+
+            <TextView
+                android:id="@+id/tv_country_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+
+      	 <TextView
+            android:id="@+id/viewCurrentLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+
+      	 <ProgressBar
+      	     android:id="@+id/progressBar1"
+      	     android:layout_width="wrap_content"
+      	     android:layout_height="wrap_content"
+      	     android:layout_gravity="center"/>"
+      	
+      	 <Button
+            android:id="@+id/btn_find_location"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Find My Location" 
+            android:layout_marginTop="30dp"
+    ></Button>
+
+      	 <Button
+      	     android:id="@+id/btn_submit"
+      	     android:layout_width="wrap_content"
+      	     android:layout_height="wrap_content"
+      	     android:text="Submit"
+      	     android:layout_gravity="center" 
+      	     android:layout_marginTop="30dp"/>
+
+      	 <TextView
+      	     android:id="@+id/latitude_longitude"
+      	     android:layout_width="wrap_content"
+      	     android:layout_height="wrap_content"
+      	     android:textAppearance="?android:attr/textAppearanceMedium" 
+      	     android:layout_marginTop="10dp"
+      	     android:layout_marginLeft="30dp"/>
+
+</LinearLayout>
+
+</ScrollView>
